@@ -22,7 +22,7 @@ x10 = "#e9edf5"
 janela = Tk()
 janela.title('')
 janela.geometry('900x600')
-janela.configure(background=x10)
+janela.configure(background=x1)
 janela.resizable(width=FALSE, height=FALSE)
 
 style = ttk.Style(janela)
