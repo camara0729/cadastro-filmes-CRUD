@@ -12,7 +12,7 @@ def criar_form(i):
 
     with conexao:
         cursor = conexao.cursor()
-        query = "INSERT INTO filmes(id, nome, categoria, descricao, data_lancamento, imagem) VALUES(?, ?, ?, ?, ?, ?)"
+        query = "INSERT INTO filmes(id, nome, categoria, descricao, duracao, data_lancamento, imagem) VALUES(?, ?, ?, ?, ?, ?, ?)"
         cursor.execute(query, i)
 
 # READ - Ler todos os dados
@@ -55,7 +55,7 @@ def atualizar_form(i):
 
     with conexao:
         cursor = conexao.cursor()
-        query = "UPDATE filmes SET id=?, nome=?, categoria=?, descricao=?, data_lancamento=?, imagem=? WHERE id=?"
+        query = "UPDATE filmes SET id=?, nome=?, categoria=?, descricao=?, duracao=?, data_lancamento=?, imagem=? WHERE id=?"
         cursor.execute(query, i)
 
 # DELETE - Deletar dados
