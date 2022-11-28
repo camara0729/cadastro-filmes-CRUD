@@ -10,4 +10,4 @@ conexao = lite.connect('dados.db')
 
 with conexao:
     cursor = conexao.cursor()
-    cursor.execute("CREATE TABLE filmes(id INTEGER PRIMARY KEY AUTOINCREMENT, nome TEXT, categoria TEXT, descricao TEXT, duracao INTEGER, data_lancamento DATE, imagem TEXT)")
+    cursor.execute("CREATE TABLE filme(id INTEGER PRIMARY KEY AUTOINCREMENT, nome TEXT, categoria TEXT, descricao TEXT, duracao INTEGER, data_lancamento DATE, imagem TEXT)")
